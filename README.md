@@ -10,18 +10,9 @@ The model decomposes the expected intensity of daily event counts into interpret
 
 The time series is modeled as a **Poisson process** with time-varying intensity:
 
-\[
-\lambda(t) =
-\text{trend}(t)
-\times
-\text{weekly}(t)
-\times
-\text{yearly}(t)
-\times
-\text{holiday}(t)
-\times
-\text{spike}(t)
-\]
+```
+λ(t) = trend(t) × weekly(t) × yearly(t) × holiday(t) × spike(t)
+```
 
 Where:
 
@@ -128,14 +119,6 @@ Saved as:
 ```
 kolokwium_forecast_poisson_365.csv
 ```
-
----
-
-## Notes
-
-- The model is **interpretable by design**.
-- Noise is deliberately **down-scaled** to avoid unrealistic volatility.
-- Designed for **daily count data** (calls, arrivals, transactions).
 
 ---
 
