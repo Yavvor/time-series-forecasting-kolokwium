@@ -1,6 +1,6 @@
 # Time Series Forecasting – Kolokwium (Poisson Model)
 
-This repository contains a **time series forecasting framework based on a multiplicative Poisson process decomposition**, developed for the *Statistical Arbitrage Methods* course (“kolokwium”).
+This repository contains a **time series forecasting framework based on a multiplicative Poisson process decomposition**, developed for the *Statistical Arbitrage Methods* course.
 
 The model decomposes the expected intensity of daily event counts into interpretable components and produces calibrated, noise-aware forecasts.
 
