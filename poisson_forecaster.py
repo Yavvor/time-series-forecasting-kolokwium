@@ -637,10 +637,10 @@ class KolokwiumForecaster:
 
         plt.figure(figsize=figsize)
         plt.plot(self.df.index, self.df["count"], label="history", alpha=0.7)
-        plt.plot(self.forecast_df.index,
-                 self.forecast_df["expected_count"],
-                 label="expected",
-                 color="C1")
+        # plt.plot(self.forecast_df.index,
+        #          self.forecast_df["expected_count"],
+        #          label="expected",
+        #          color="C1")
         plt.plot(self.forecast_df.index,
                  self.forecast_df["simulated_count"],
                  label="simulated",
@@ -666,7 +666,7 @@ class KolokwiumForecaster:
 
 if __name__ == "__main__":
     # Example execution script
-    DATA_PATH = "/path/to/kolokwium_data.csv"
+    DATA_PATH = r"c:\Users\igorj\Desktop\studia\mag 3 sem\metody arbitrazu statystycznego\kolokwium-dane-0912.csv"
 
     # Initialize forecaster
     f = KolokwiumForecaster(DATA_PATH)
